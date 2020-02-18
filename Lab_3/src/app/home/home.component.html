@@ -1,0 +1,17 @@
+<p>Please enter the name of a food item to retrieve the amount of calories contained in a serving and its weight:</p>
+<form [formGroup]="foodForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="FoodItem">Food Item</label>
+        <input type="text" id="FoodItem" formControlName="FoodItem" class="form-control">
+    </div>
+    <div class="form-group">
+        <button onclick="responsiveVoice.speak($('#FoodItem').val());" class="btn btn-primary">
+            Search
+        </button>
+    </div>
+</form>
+<div *ngIf="item">
+    <p>Food: {{item.name}}</p>
+    <p>Calories per serving: {{item.calories}}</p>
+    <p>Weight per serving in grams: {{item.weight}}</p>
+</div>
