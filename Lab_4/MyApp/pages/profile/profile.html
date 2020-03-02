@@ -1,0 +1,43 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngFor="let item of ProPicItems | async" >
+    <img [src]="'data:image/png;base64,' + item.imageData"/>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-list-header>Proflie Photo</ion-list-header>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div>
+    <button ion-button color="light" block (click)="ProPictake1()">Take a Picture</button>
+  </div>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input [(ngModel)]="profile.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>First Name</ion-label>
+    <ion-input [(ngModel)]="profile.firstName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Last Name</ion-label>
+    <ion-input [(ngModel)]="profile.lastName"></ion-input>
+  </ion-item>
+
+  <button ion-button clear block (click)="createProfile()">Create Profile</button>
+
+</ion-content>

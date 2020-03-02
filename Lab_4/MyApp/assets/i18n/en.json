@@ -1,0 +1,73 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+  "SIGNUP": "Sign up",
+  "WELCOME_SKIP": "Skip",
+
+
+  "TAB1_TITLE": "Home",
+  "TAB2_TITLE": "Info",
+  "TAB3_TITLE": "Search",
+  "TAB4_TITLE": "Message",
+  "TAB5_TITLE": "User",
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the DealSuperior",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "In this App <b>DealSuperior</b>. You can find the best deal for the product you want to buy, not just the <b>PRICE</b>!",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to find the best deal",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "When you search the product, not just the information from third parties, the recommendation or the best deal from other customers will show for you",
+
+  "TUTORIAL_SLIDE3_TITLE": "More fun?",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "We also provide that you can use your camera to take a picture of product, and <b>DealSuperior</b> will know what you want",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Use?",
+
+  "WELCOME_INTRO": "Login to enjoy more in this app",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Login",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "LOGIN_OPTION": "Sign in by other accounts",
+  "FORGOT_PASSWORD": "Forgot Password?",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Home",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+}

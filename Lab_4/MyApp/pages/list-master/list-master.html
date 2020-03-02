@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>{{ 'SEARCH_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>\
+
+<ion-content padding>
+  <div>
+    <button ion-button color="primary" block (click)="Pictake1()">Take a Picture</button>
+  </div>
+
+  <ion-item>
+    <ion-label color="primary" stacked icon-only="search">Search the Product</ion-label>
+    <ion-input type="text" (input)="searchForapiItems($event, searchKey)"></ion-input>
+  </ion-item>
+
+  <ion-card (click)="deleteResult(i)" *ngFor="let item of PicItems | async; let i = index " >
+    <img [src]="'data:image/png;base64,' + item.imageData"/>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-list-header>Labels</ion-list-header>
+        <ion-item *ngFor="let label of item.results">{{label.description}}</ion-item>
+        <!--<ion-item>{{item.results[0].labelAnnotations.description}}</ion-item>-->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let apiItem of apiItems" (click)="selectapiItem($event, apiItem)">
+      <ion-thumbnail item-left>
+      <!--<img src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}"/>-->
+      <img src="{{apiItem.mediumImage}}"/>
+      </ion-thumbnail>
+      <h2>{{apiItem.name}}</h2>
+      <p class="item-description">{{apiItem.salePrice}}</p>
+      <p class="item-description">{{apiItem.msrp}}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

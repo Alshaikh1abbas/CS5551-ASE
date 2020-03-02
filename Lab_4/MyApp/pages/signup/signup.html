@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title text-center>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+    <div padding>
+      <ion-list>
+        <ion-item class="item item-checkbox">
+          <p>
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+             Check and agree using policies <br>
+          </p>
+          <p>
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+            Check and receive latest info email
+          </p>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div padding>
+      <button ion-button color="primary" block (click)="doSignup(user)">{{ 'SIGNUP_BUTTON' | translate }}</button>
+    </div>
+
+  </ion-list>
+
+  <div padding text-center>
+    <a color="primary">{{ 'LOGIN_OPTION' | translate }}</a>
+  </div>
+  <ion-buttons text-center>
+    <button ion-button round color="facebook">Facebook</button>
+    <button ion-button round color="twitter" >Twitter</button>
+    <button ion-button round color="danger" (click)="doGoogleLogin()">Google</button>
+  </ion-buttons>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title text-center>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="signup1()">{{ 'SIGNUP_BUTTON' | translate}}</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <button margin-top="10px" ion-button color="primary" block (click)="doLogin(user)">{{ 'LOGIN_BUTTON' | translate }}</button>
+  </ion-list>
+
+
+  <div padding text-center>
+    <a color="primary">{{ 'LOGIN_OPTION' | translate }}</a>
+  </div>
+  <ion-buttons text-center>
+    <button ion-button round color="facebook">Facebook</button>
+    <button ion-button round color="twitter" >Twitter</button>
+    <button ion-button round color="danger" (click)="doGoogleLogin()">Google</button>
+  </ion-buttons>
+</ion-content>
+
+<ion-footer>
+  <ion-navbar>
+    <ion-buttons text-center>
+      <button ion-button (click)="signup1()">{{ 'SIGNUP_BUTTON' | translate}}</button>
+      <button ion-button><b>|</b></button>
+      <button ion-button>{{ 'FORGOT_PASSWORD' | translate}}</button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-footer>
