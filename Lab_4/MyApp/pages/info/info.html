@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title text-center>Info</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar margin-top="5px" placeholder="Please Input Product name"></ion-searchbar>
+
+  <div padding>
+    <button ion-button color="primary" block (click)="uploaditems()">Upload my discovers</button>
+  </div>
+
+  <ion-item>
+    <ion-input [(ngModel)]="myInput"></ion-input>
+  </ion-item>
+  <button ion-button (click)="btnAddClicked()">Add</button>
+
+  <ion-list>
+    <ion-item *ngFor="let item of arrData; let i = index" (click)="deleteItem(i)">
+      {{item.$value}}
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <h1>Top Best Product List</h1>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://www.github.com/MaxGolden/CS5551_Advanced_Software_Engineering/blob/master/ICP6/Documentation/Screenshots/4loginBandHellosidebar.png">
+      </ion-thumbnail>
+      <h2>Weezer</h2>
+      <p>Blue Album</p>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/speakers/lion.jpg">
+      </ion-thumbnail>
+      <h2>Smashing Pumpkins</h2>
+      <p>Siamese Dream</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
