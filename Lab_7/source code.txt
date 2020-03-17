@@ -1,0 +1,19 @@
+
+## Installing nodejs on ubuntu server
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+## to test an installation is working (and that the setup scripts are working!) use:
+
+curl -sL https://deb.nodesource.com/test | bash -
+##Installing github on ubuntu
+sudo apt-get install git
+##You can check using 
+git --help
+## clone app on the server
+git clone https://aemwaqas60@bitbucket.org/aemwaqas60/node-basics.git
+## start the node.js app
+npm install 
+node app.js
+### keep app running 
+npm install pm2 -g
+sudo pm2 start app.js
